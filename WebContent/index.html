@@ -292,7 +292,8 @@
     			var login_btn = document.getElementById("kakao-login-btn");
     			login_btn.innerHTML = `<a 	id="kakao-login-btn" ><img id="kakao-login-btn"
     				src="images/logout.png"></a>`	
-    				
+    			// 19.06.22 로그인 쿠키 확인 및 세션 저장 서블릿과 로그아웃 서블릿 만들것
+    			// 선수 데이터 크롤링 및 끝나면 선수 데이터 저장 DB 테이블 작성 및 데이터 조회 페이지 작성
             },
             fail: function(error) {
               alert(JSON.stringify(error));
