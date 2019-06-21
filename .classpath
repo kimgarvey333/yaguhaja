@@ -8,9 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-<<<<<<< HEAD
-	<classpathentry kind="lib" path="C:/Users/kimja/Desktop/apache-tomcat-7.0.94.zip"/>
-=======
 	<classpathentry kind="lib" path="C:/Users/pc-04/Desktop/apache-tomcat-7.0.94.zip"/>
 >>>>>>> branch 'master' of https://github.com/kimgarvey333/yaguhaja
 	<classpathentry kind="output" path="build/classes"/>
