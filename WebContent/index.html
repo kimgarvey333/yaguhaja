@@ -290,7 +290,8 @@
             	var img = document.getElementById('profile_image');
     			img.setAttribute('src', profile_image.substring( 1, (profile_image.length -1) )); 
     			var login_btn = document.getElementById("kakao-login-btn");
-    			login_btn.innerHTML = `<a 	id="kakao-login-btn"></a>`	
+    			login_btn.innerHTML = `<a 	id="kakao-login-btn" ><img id="kakao-login-btn"
+    				src="images/logout.png"></a>`	
     				
             },
             fail: function(error) {
