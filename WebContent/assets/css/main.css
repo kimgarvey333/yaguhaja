@@ -14,6 +14,7 @@
 	color: blue;
 }
 
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
 	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
@@ -1958,7 +1959,7 @@ ol li {
 #sidebar {
 	color: rgba(255, 255, 255, 0.55);
 	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
-	width: 14em;
+	width: 16em;
 	padding: 3em 1.35em 1em 1.15em;
 	background: #364050 url("images/bg01.png");
 	overflow-y: auto;
@@ -2021,7 +2022,7 @@ ol li {
 	position: relative;
 	background-color: #fff;
 	background-image: url("images/bg02.png");
-	width: 100px;
+	width: 30px;
 	-moz-flex-grow: 1;
 	-webkit-flex-grow: 1;
 	-ms-flex-grow: 1;
@@ -2030,6 +2031,7 @@ ol li {
 	-webkit-flex-shrink: 1;
 	-ms-flex-shrink: 1;
 	flex-shrink: 1;
+	visibility: hidden;
 }
 
 #content>.inner {

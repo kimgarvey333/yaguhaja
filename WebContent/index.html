@@ -117,8 +117,9 @@
 	</div>
 
 	<!-- Sidebar -->
+	<!-- 카카오톡 로그인 버튼 -->
 	<div id="sidebar">
-		<a id="kakao-login-btn" ><img id="kakao-login-btn"
+		<a id="kakao-login-btn"><img id="kakao-login-btn"
 			src="https://kauth.kakao.com/public/widget/login/kr/kr_02_medium.png"
 			style="cursor: pointer"
 			onmouseover="this.src='https://kauth.kakao.com/public/widget/login/kr/kr_02_medium_press.png'"
@@ -126,19 +127,12 @@
 
 		<p id="kakao-login-result"></p>
 		<script type="text/javascript">
-		/* function(){
-			if(nickname != null){
-				var login_btn = document.getElementById("kakao-login-btn");
-        		login_btn.innerHTML = `<a 	id="kakao-login-btn"></a>`	
-			}
 		} */
 	</script>
-		<table height="50px" width="300px">
-			<tr>
-				<td><h5 id="nickname"></h5></td>
-				<td><img id="profile_image" height="50px" width="50px" ></td>
-			</tr>
-		</table>
+				<div id="p_image" align="center"></div>
+			
+				<div id = "nickname_td"></div>
+
 		<!-- Logo -->
 		<h1 id="logo">
 			<a href="#">야!구하자!</a>
@@ -289,10 +283,15 @@
             success: function(res) {
             	profile_image = JSON.stringify(res["properties"].profile_image);
             	nickname = JSON.stringify(res["properties"].nickname);
-            	var nick = document.getElementById("nickname");
-            	nick.innerHTML = `<h5>${nickname.substring(1,(nickname.length -1))}님 환영합니다!</h>`
+    			var p_image = document.getElementById("p_image");
+    			p_image.innerHTML = '<div id = "p_image" align="center"><img id="profile_image" height="100px" width="100px" ></div>' 
+            	var nick = document.getElementById("nickname_td");
+            	nick.innerHTML = `<div id = "nickname_td" align="center"><h5>${nickname.substring(1,(nickname.length -1))}님 환영합니다!</h5><br></div>`
             	var img = document.getElementById('profile_image');
-    			img.setAttribute('src', profile_image.substring( 1, (profile_image.length -1) ));    			
+    			img.setAttribute('src', profile_image.substring( 1, (profile_image.length -1) )); 
+    			var login_btn = document.getElementById("kakao-login-btn");
+    			login_btn.innerHTML = `<a 	id="kakao-login-btn"></a>`	
+    				
             },
             fail: function(error) {
               alert(JSON.stringify(error));
