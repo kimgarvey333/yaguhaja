@@ -8,6 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/pc-06/Downloads/apache-tomcat-7.0.94-src.zip"/>
+	<classpathentry kind="lib" path="C:/Users/pc-04/Desktop/apache-tomcat-7.0.94.zip"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
