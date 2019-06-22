@@ -150,7 +150,7 @@
 
 		<!-- Search -->
 		<section class="box search">
-			<form method="post" action="data_search">
+			<form method="post" action="data_search.jsp">
 				<input type="text" class="text" name="search" placeholder="Search" />
 			</form>
 		</section>
@@ -284,14 +284,14 @@
             	profile_image = JSON.stringify(res["properties"].profile_image);
             	nickname = JSON.stringify(res["properties"].nickname);
     			var p_image = document.getElementById("p_image");
+    			var login_btn = document.getElementById("kakao-login-btn");
+    			login_btn.innerHTML = `<a href = "member_logout" id="kakao-logout-btn" ><img id="kakao-login-btn"
+    				src="images/logout.png"></a>`	
     			p_image.innerHTML = '<div id = "p_image" align="center"><img id="profile_image" height="100px" width="100px" ></div>' 
             	var nick = document.getElementById("nickname_td");
             	nick.innerHTML = `<div id = "nickname_td" align="center"><h5>${nickname.substring(1,(nickname.length -1))}님 환영합니다!</h5><br></div>`
             	var img = document.getElementById('profile_image');
     			img.setAttribute('src', profile_image.substring( 1, (profile_image.length -1) )); 
-    			var login_btn = document.getElementById("kakao-login-btn");
-    			login_btn.innerHTML = `<a href = "member_logout" id="kakao-logout-btn" ><img id="kakao-login-btn"
-    				src="images/logout.png"></a>`	
     			if (window.sessionStorage) {
                     sessionStorage.setItem('login_id', nickname);
                     var cur_id = sessionStorage.getItem('login_id');
