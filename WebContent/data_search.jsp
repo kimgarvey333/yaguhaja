@@ -37,6 +37,11 @@
 				 String di = request.getParameter("search");
 				 %>
 					<p><%= di %> 에 대한 검색 결과</p>
+					<teble boder="1px solid black">
+						<tr>
+							<td>집</td>
+						</tr>
+					</teble>
 				
 			</header>
 			<!-- <div class="info">

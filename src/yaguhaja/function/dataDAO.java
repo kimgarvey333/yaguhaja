@@ -86,6 +86,8 @@ public class dataDAO {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally{
+			Close();
 		}
 		return list;
 	}

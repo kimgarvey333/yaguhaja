@@ -9,4 +9,7 @@ public class dataDTO {
 	String position;
 	String fav_hand;
 	float hit_rate;
+	
+	
 }
+
