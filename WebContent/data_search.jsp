@@ -1,9 +1,6 @@
-<!DOCTYPE HTML>
-<!--
-	Striped by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>Striped by HTML5 UP</title>
@@ -29,9 +26,17 @@
 									need a subtitle.
 								-->
 				<h2>
-					<a href="#">ì•¼! êµ¬í•˜ì!</a>
+					°Ë»ö °á°ú
 				</h2>
-				<p>KBO ìˆ˜ë¹„ ì‹œí”„íŠ¸ ë¶„ì„ ë° ì˜ˆì¸¡</p>
+				<script type="text/javascript">
+					var list = <%= request.getParameter("list") %>;
+				</script>
+				 <% 
+				 response.setCharacterEncoding("utf-8");
+				 String di = request.getParameter("search");
+				 %>
+					<p><%= di %> ¿¡ ´ëÇÑ °Ë»ö °á°ú</p>
+				
 			</header>
 			<!-- <div class="info">
 				
@@ -57,8 +62,8 @@
 			<a href="#" class="image featured"><img src="images/pic01.jpg"
 				alt="" /></a>
 			<p>
-				<strong>ì•ˆë…•!</strong> ì´ ì‚¬ì´íŠ¸ëŠ” <strong>ì•¼! êµ¬í•˜ìì•¼!</strong>, ì•¼! êµ¬í•˜ì!ëŠ” KBO
-				ê²½ê¸° ë°ì´í„°ë¥¼ ë¶„ì„ ë° ê¸°ê³„í•™ìŠµí•´ì„œ ì„ ìˆ˜ë³„ ìˆ˜ë¹„ ì‹œí”„íŠ¸ë¥¼ ì˜ˆì¸¡í•´ì£¼ëŠ” ì›¹ ì‚¬ì´íŠ¸ì•¼!
+				<strong>¾È³ç!</strong> ÀÌ »çÀÌÆ®´Â <strong>¾ß! ±¸ÇÏÀÚ¾ß!</strong>, ¾ß! ±¸ÇÏÀÚ!´Â KBO
+				°æ±â µ¥ÀÌÅÍ¸¦ ºĞ¼® ¹× ±â°èÇĞ½ÀÇØ¼­ ¼±¼öº° ¼öºñ ½ÃÇÁÆ®¸¦ ¿¹ÃøÇØÁÖ´Â À¥ »çÀÌÆ®¾ß!
 			</p>
 			<p>
 				Striped is released for free under the <a
@@ -117,7 +122,7 @@
 	</div>
 
 	<!-- Sidebar -->
-	<!-- ì¹´ì¹´ì˜¤í†¡ ë¡œê·¸ì¸ ë²„íŠ¼ -->
+	<!-- Ä«Ä«¿ÀÅå ·Î±×ÀÎ ¹öÆ° -->
 	<div id="sidebar">
 		<a id="kakao-login-btn"><img id="kakao-login-btn"
 			src="https://kauth.kakao.com/public/widget/login/kr/kr_02_medium.png"
@@ -127,31 +132,31 @@
 
 		<p id="kakao-login-result"></p>
 		<script type="text/javascript">
-		} */
-	</script>
+			
+		</script>
 		<div id="p_image" align="center"></div>
 
 		<div id="nickname_td"></div>
 
 		<!-- Logo -->
 		<h1 id="logo">
-			<a href="#">ì•¼!êµ¬í•˜ì!</a>
+			<a href="#">¾ß!±¸ÇÏÀÚ!</a>
 		</h1>
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="#">í™ˆí˜ì´ì§€ ì†Œê°œ</a></li>
-				<li><a href="#">ì•¼êµ¬ì„ ìˆ˜ ë°ì´í„°</a></li>
-				<li><a href="#">ìˆ˜ë¹„ ì‹œí”„íŠ¸ ì˜ˆì¸¡</a></li>
-				<li><a href="#">ê²Œì‹œíŒ</a></li>
+				<li class="current"><a href="#">È¨ÆäÀÌÁö ¼Ò°³</a></li>
+				<li><a href="#">¾ß±¸¼±¼ö µ¥ÀÌÅÍ</a></li>
+				<li><a href="#">¼öºñ ½ÃÇÁÆ® ¿¹Ãø</a></li>
+				<li><a href="#">°Ô½ÃÆÇ</a></li>
 			</ul>
 		</nav>
 
 		<!-- Search -->
 		<section class="box search">
-			<form action="data_search.jsp">
-				<input type="text" id = 'text' class="text" name="search" placeholder="Search" />
+			<form method="post" action="data_search">
+				<input type="text" class="text" name="search" placeholder="Search" />
 			</form>
 		</section>
 
@@ -159,7 +164,7 @@
 		<section class="box text-style1">
 			<div class="inner">
 				<p>
-					<strong>By </strong> í•˜ëŠ˜ ë°‘ìœ¼ë¡œ ë‹¤ ê¸°ì•„(KIA)
+					<strong>By </strong> ÇÏ´Ã ¹ØÀ¸·Î ´Ù ±â¾Æ(KIA)
 				</p>
 			</div>
 		</section>
@@ -167,7 +172,7 @@
 		<!-- Recent Posts -->
 		<section class="box recent-posts">
 			<header>
-				<h2>ìµœê·¼ ê²€ìƒ‰í•œ ì„ ìˆ˜</h2>
+				<h2>ÃÖ±Ù °Ë»öÇÑ ¼±¼ö</h2>
 			</header>
 			<ul>
 				<li><a href="#">Lorem ipsum dolor</a></li>
@@ -269,48 +274,64 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script type='text/javascript'>
-	var profile_image = null;
-	var nickname = null;
-  //<![CDATA[
-    // ì‚¬ìš©í•  ì•±ì˜ JavaScript í‚¤ë¥¼ ì„¤ì •í•´ ì£¼ì„¸ìš”.
-    Kakao.init('90e40515ca7b454e051e2a598152aafd');
-    // ì¹´ì¹´ì˜¤ ë¡œê·¸ì¸ ë²„íŠ¼ì„ ìƒì„±í•©ë‹ˆë‹¤.
-    Kakao.Auth.createLoginButton({
-      container: '#kakao-login-btn',
-      success: function(authObj) {
-        Kakao.API.request({
-            url: '/v2/user/me',
-            success: function(res) {
-            	profile_image = JSON.stringify(res["properties"].profile_image);
-            	nickname = JSON.stringify(res["properties"].nickname);
-    			var p_image = document.getElementById("p_image");
-    			var login_btn = document.getElementById("kakao-login-btn");
-    			login_btn.innerHTML = `<a href = "member_logout" id="kakao-logout-btn" ><img id="kakao-login-btn"
-    				src="images/logout.png"></a>`	
-    			p_image.innerHTML = '<div id = "p_image" align="center"><img id="profile_image" height="100px" width="100px" ></div>' 
-            	var nick = document.getElementById("nickname_td");
-            	nick.innerHTML = `<div id = "nickname_td" align="center"><h5>${nickname.substring(1,(nickname.length -1))}ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤!</h5><br></div>`
-            	var img = document.getElementById('profile_image');
-    			img.setAttribute('src', profile_image.substring( 1, (profile_image.length -1) )); 
-    			if (window.sessionStorage) {
-                    sessionStorage.setItem('login_id', nickname);
-                    var cur_id = sessionStorage.getItem('login_id');
-                }
-    				
-            // 19.06.22  ë¡œê·¸ì•„ì›ƒ ì„œë¸”ë¦¿ ë§Œë“¤ê²ƒ
-    		// ì„ ìˆ˜ ë°ì´í„° í¬ë¡¤ë§ ë° ëë‚˜ë©´ ì„ ìˆ˜ ë°ì´í„° ì €ì¥ DB í…Œì´ë¸” ì‘ì„± ë° ë°ì´í„° ì¡°íšŒ í˜ì´ì§€ ì‘ì„±
-    		
-            },
-            fail: function(error) {
-              alert(JSON.stringify(error));
-            }
-          });
-      },
-      fail: function(err) {
-         alert(JSON.stringify(err));
-      }
-    });
-  //]]>
-</script>
+		var profile_image = null;
+		var nickname = null;
+		//<![CDATA[
+		// »ç¿ëÇÒ ¾ÛÀÇ JavaScript Å°¸¦ ¼³Á¤ÇØ ÁÖ¼¼¿ä.
+		Kakao.init('90e40515ca7b454e051e2a598152aafd');
+		// Ä«Ä«¿À ·Î±×ÀÎ ¹öÆ°À» »ı¼ºÇÕ´Ï´Ù.
+		Kakao.Auth
+				.createLoginButton({
+					container : '#kakao-login-btn',
+					success : function(authObj) {
+						Kakao.API
+								.request({
+									url : '/v2/user/me',
+									success : function(res) {
+										profile_image = JSON
+												.stringify(res["properties"].profile_image);
+										nickname = JSON
+												.stringify(res["properties"].nickname);
+										var p_image = document
+												.getElementById("p_image");
+										var login_btn = document
+												.getElementById("kakao-login-btn");
+										login_btn.innerHTML = `<a href = "member_logout" id="kakao-logout-btn" ><img id="kakao-login-btn"
+    				src="images/logout.png"></a>`
+										p_image.innerHTML = '<div id = "p_image" align="center"><img id="profile_image" height="100px" width="100px" ></div>'
+										var nick = document
+												.getElementById("nickname_td");
+										nick.innerHTML = `<div id = "nickname_td" align="center"><h5>${nickname.substring(1,(nickname.length -1))}´Ô È¯¿µÇÕ´Ï´Ù!</h5><br></div>`
+										var img = document
+												.getElementById('profile_image');
+										img
+												.setAttribute(
+														'src',
+														profile_image
+																.substring(
+																		1,
+																		(profile_image.length - 1)));
+										if (window.sessionStorage) {
+											sessionStorage.setItem('login_id',
+													nickname);
+											var cur_id = sessionStorage
+													.getItem('login_id');
+										}
+
+										// 19.06.22  ·Î±×¾Æ¿ô ¼­ºí¸´ ¸¸µé°Í
+										// ¼±¼ö µ¥ÀÌÅÍ Å©·Ñ¸µ ¹× ³¡³ª¸é ¼±¼ö µ¥ÀÌÅÍ ÀúÀå DB Å×ÀÌºí ÀÛ¼º ¹× µ¥ÀÌÅÍ Á¶È¸ ÆäÀÌÁö ÀÛ¼º
+
+									},
+									fail : function(error) {
+										alert(JSON.stringify(error));
+									}
+								});
+					},
+					fail : function(err) {
+						alert(JSON.stringify(err));
+					}
+				});
+		//]]>
+	</script>
 </body>
 </html>
