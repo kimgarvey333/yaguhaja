@@ -8,7 +8,6 @@
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <style type="text/css">
 @font-face {
 	font-family: 'Jua', sans-serif;
@@ -163,18 +162,10 @@
 	</div>
 
 	<!-- Sidebar -->
-	<!-- 카카오톡 로그인 버튼 -->
+
 	<div id="sidebar">
-		<a id="kakao-login-btn"><img id="kakao-login-btn"
-			src="https://kauth.kakao.com/public/widget/login/kr/kr_02_medium.png"
-			style="cursor: pointer"
-			onmouseover="this.src='https://kauth.kakao.com/public/widget/login/kr/kr_02_medium_press.png'"
-			onmouseout="this.src='https://kauth.kakao.com/public/widget/login/kr/kr_02_medium.png'"></a>
+		
 
-		<p id="kakao-login-result"></p>
-		<script type="text/javascript">
-
-	</script>
 		<div id="p_image" align="center"></div>
 
 		<div id="nickname_td"></div>
@@ -318,33 +309,7 @@
 	var profile_image = null;
 	var nickname = null;
   //<![CDATA[
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('90e40515ca7b454e051e2a598152aafd');
-    // 카카오 로그인 버튼을 생성합니다.
-    Kakao.Auth.createLoginButton({
-      container: '#kakao-login-btn',
-      success: function(authObj) {
-        Kakao.API.request({
-            url: '/v2/user/me',
-            success: function(res) {
-            	profile_image = JSON.stringify(res["properties"].profile_image);
-            	nickname = JSON.stringify(res["properties"].nickname);
-    			var p_image = document.getElementById("p_image");
-    			var login_btn = document.getElementById("kakao-login-btn");
-    			login_btn.innerHTML = `<a href = "member_logout" id="kakao-logout-btn" ><img id="kakao-login-btn"
-    				src="images/logout.png"></a>`	
-    			p_image.innerHTML = '<div id = "p_image" align="center"><img id="profile_image" height="100px" width="100px" ></div>' 
-            	var nick = document.getElementById("nickname_td");
-            	nick.innerHTML = `<div id = "nickname_td" align="center"><h5>${nickname.substring(1,(nickname.length -1))}님 환영합니다!</h5><br></div>`
-            	var img = document.getElementById('profile_image');
-    			img.setAttribute('src', profile_image.substring( 1, (profile_image.length -1) )); 
-    			if (window.sessionStorage) {
-                    sessionStorage.setItem('login_id', nickname);
-                    var cur_id = sessionStorage.getItem('login_id');
-                }
-    				
-            // 19.06.22  로그아웃 서블릿 만들것
-    		// 선수 데이터 크롤링 및 끝나면 선수 데이터 저장 DB 테이블 작성 및 데이터 조회 페이지 작성
+
     		
             },
             fail: function(error) {
