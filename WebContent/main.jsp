@@ -2,11 +2,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>Striped by HTML5 UP</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<style type="text/css">
+@font-face {
+	font-family: 'LEAGUEGOTHIC-CONDENSEDITALIC';
+	src: url('fonts/LEAGUEGOTHIC-CONDENSEDITALIC.OTF') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#main {
+	font-family: 'LEAGUEGOTHIC-CONDENSEDITALIC';
+	font-size: 100;
+	text-align: center;
+	
+}
+
+</style>
 </head>
 <body class="is-preload">
 	<!-- 	<div class="panel-body" width = "10px"></div> -->
@@ -23,10 +40,18 @@
 									if they get too long. You can also remove the <p> entirely if you don't
 									need a subtitle.
 								-->
-				<h2>
-					<a href="#">야! 구하자!</a>
+				<h2 id = "main">
+					<a>KBO 야! 구하자! </a>
 				</h2>
-				<p>KBO 수비 시프트 분석 및 예측</p>
+				
+				<p>KBO KIA 구단 수비 시프트 분석 및 예측을 도와주는 사이트 입니다.<br>
+				수비시프트 예측을 MLB 야구처럼 데이터를 활용해서 
+				</p>
+					
+			<p>
+				<strong>안녕!</strong> 이 사이트는 <strong>야! 구하자야!</strong>, 야! 구하자!는 KBO
+				경기 데이터를 분석 및 기계학습해서 선수별 수비 시프트를 예측해주는 웹 사이트야!
+			</p>
 			</header>
 			<!-- <div class="info">
 				
@@ -49,13 +74,25 @@
 					<li><a href="#" class="icon brands fa-facebook-f">128</a></li>
 				</ul>
 			</div> -->
-			<a href="#" class="image featured"><img src="images/pic01.jpg"
+		
+			
+			<!--KBO 올스타 사진  -->
+			<a href="#"><img src="./images/allstar.png" width = "700" height = "500"></a>
+		
+			<!--기아 동영상   -->
+			<body>
+				<video src = "./video/kia.mp4" controls= "controls" poster = "./poster/poster.png"
+				  width = "750" height ="500">
+				</video>
+			</body>
+			
+			<!-- <a href="#" class="image featured"><img src="images/pic01.jpg"
 				alt="" /></a>
-			<p>
-				<strong>안녕!</strong> 이 사이트는 <strong>야! 구하자야!</strong>, 야! 구하자!는 KBO
-				경기 데이터를 분석 및 기계학습해서 선수별 수비 시프트를 예측해주는 웹 사이트야!
-			</p>
-			<p>
+			 -->
+		
+		
+			
+			<!-- <p>
 				Striped is released for free under the <a
 					href="http://html5up.net/license">Creative Commons Attribution
 					license</a> so feel free to use it for personal projects or even
@@ -65,19 +102,19 @@
 					UP</a> for more cool designs or follow me on <a
 					href="http://twitter.com/ajlkn">Twitter</a> for new releases and
 				updates.
-			</p>
+			</p> -->
 		</article>
 
 		<!-- Post -->
 		<article class="box post post-excerpt">
 			<header>
 				<h2>
-					<a href="#">Lorem ipsum dolor sit amet</a>
+					<a href="#"> 제목 정해서 쓰기  </a>
 				</h2>
-				<p>Feugiat interdum sed commodo ipsum consequat dolor nullam
-					metus</p>
+				<p> 최신 야구 뉴스 ? </p>
 			</header>
-			<!-- <div class="info">
+			
+		<!--왼쪽 상단 바 <div class="info">
 				<span class="date"><span class="month">Jul<span>y</span></span>
 					<span class="day">2</span><span class="year">, 2019</span></span>
 				<ul class="stats">
@@ -87,8 +124,20 @@
 					<li><a href="#" class="icon brands fa-facebook-f">128</a></li>
 				</ul>
 			</div> -->
+	
+			<div>
+				<ul>
+					<li><a href = "https://sports.news.naver.com/kbo/news/read.nhn?oid=477&aid=0000191542">우승 포수 김민식이 돌아오는구나</a></li>
+					<li><a href =""></a></li>
+				
+				
+				</ul>	
+			</div>  
+			
 			<a href="#" class="image featured"><img src="images/pic02.jpg"
 				alt="" /></a>
+			
+			
 			<p>Quisque vel sapien sit amet tellus elementum ultricies. Nunc
 				vel orci turpis. Donec id malesuada metus. Nunc nulla velit,
 				fermentum quis interdum quis, tate etiam commodo lorem ipsum dolor
@@ -122,7 +171,7 @@
 
 		<p id="kakao-login-result"></p>
 		<script type="text/javascript">
-		} */
+
 	</script>
 		<div id="p_image" align="center"></div>
 
@@ -136,11 +185,10 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="#">Introduction</a></li>
-				<li><a href="#">야구선수 데이터</a></li>
-				<li><a href="#">수비 시프트 예측</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Board</a></li>
+				<li class="current"><a href="#">하늘이바보</a></li>
+				<li><a href="#">KBO 선수 기록 및 데이터</a></li>
+				<li><a href="#">KBO 선수 수비 시프트 예측</a></li>
+				<li><a href="#">문의사항</a></li>
 			</ul>
 		</nav>
 
@@ -166,23 +214,23 @@
 				<h2>최근 검색한 선수</h2>
 			</header>
 			<ul>
-				<li><a href="#">Lorem ipsum dolor</a></li>
-				<li><a href="#">Feugiat nisl aliquam</a></li>
-				<li><a href="#">Sed dolore magna</a></li>
-				<li><a href="#">Malesuada commodo</a></li>
-				<li><a href="#">Ipsum metus nullam</a></li>
+				<li><a href="#">선</a></li>
+				<li><a href="#">수</a></li>
+				<li><a href="#">이</a></li>
+				<li><a href="#">름</a></li>
+				<li><a href="#">떠야함</a></li>
 			</ul>
 		</section>
 
 		<!-- Recent Comments -->
 		<section class="box recent-comments">
 			<header>
-				<h2>Recent Comments</h2>
+				<h2>KBO 최근 이슈</h2>
 			</header>
 			<ul>
-				<li>case on <a href="#">Lorem ipsum dolor</a></li>
-				<li>molly on <a href="#">Sed dolore magna</a></li>
-				<li>case on <a href="#">Sed dolore magna</a></li>
+				<li>이범호 은퇴<a href="#">Lorem ipsum dolor</a></li>
+				<li>양현종<a href="#">Sed dolore magna</a></li>
+				<li>송승준 은퇴<a href="#">Sed dolore magna</a></li>
 			</ul>
 		</section>
 
@@ -216,7 +264,7 @@
 						<tr>
 							<td><span>8</span></td>
 							<td><span>9</span></td>
-							<td><a href="#">10</a></td>
+							<td><span>10</span></td>
 							<td><span>11</span></td>
 							<td><span>12</span></td>
 							<td><span>13</span></td>
@@ -233,9 +281,9 @@
 						</tr>
 						<tr>
 							<td><span>22</span></td>
-							<td><a href="#">23</a></td>
+							<td><span>23</span></td>
 							<td><span>24</span></td>
-							<td><a href="#">25</a></td>
+							<td><span>25</span></td>
 							<td><span>26</span></td>
 							<td><span>27</span></td>
 							<td><span>28</span></td>
