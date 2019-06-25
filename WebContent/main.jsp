@@ -7,18 +7,20 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <style type="text/css">
 @font-face {
-	font-family: 'LEAGUEGOTHIC-CONDENSEDITALIC';
+	font-family: 'Jua', sans-serif;
 	src: url('fonts/LEAGUEGOTHIC-CONDENSEDITALIC.OTF') format('opentype');
 	font-weight: normal;
 	font-style: normal;
+	
 }
 
-#main {
-	font-family: 'LEAGUEGOTHIC-CONDENSEDITALIC';
-	font-size: 100;
+#main, #logo {
+	font-family: 'Jua', sans-serif;
+	font-size: 200;
 	text-align: center;
 	
 }
@@ -185,7 +187,7 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="#">하늘이바보</a></li>
+				<li class="current"><a href="#">야!구하자</a></li>
 				<li><a href="#">KBO 선수 기록 및 데이터</a></li>
 				<li><a href="#">KBO 선수 수비 시프트 예측</a></li>
 				<li><a href="#">문의사항</a></li>
