@@ -9,7 +9,7 @@
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/data_search.css" />
+<link rel="stylesheet" href="assets/css/kiwoom_data.css" />
 <link href="https://fonts.googleapis.com/css?family=Jua&display=swap"
 	rel="stylesheet">
 <style type="text/css">
@@ -51,25 +51,25 @@
 			<tr>
 				<td class="team_logo"><a href="kia_data.jsp" id="kia"><img src="images/kia_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="doosan_data.jsp" id="doosan"><img src="images/doosan_logo.png"
+				<td class="team_logo"><a href=# id="doosan"><img src="images/doosan_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="hanwha_data.jsp" id="hanwha"><img src="images/hanwha_logo.png"
+				<td class="team_logo"><a href=# id="hanwha"><img src="images/hanwha_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="kiwoom_data.jsp" id="kiwoom"><img src="images/kiwoom_logo.png"
+				<td class="team_logo"><a href=# id="kiwoom"><img src="images/kiwoom_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="sk_data.jsp" id="sk"><img src="images/sk_logo.png"
+				<td class="team_logo"><a href=# id="kt"><img src="images/kt_logo.png"
 						width="150px" height="120px"></a></td>
 			</tr>
 			<tr>
-				<td class="team_logo"><a href="lg_data.jsp" id="lg"><img src="images/lg_logo.png"
+				<td class="team_logo"><a href=# id="lg"><img src="images/lg_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="lotte_data.jsp" id="lotte"><img src="images/lotte_logo.png"
+				<td class="team_logo"><a href=# id="lotte"><img src="images/lotte_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="nc_data.jsp" id="nc"><img src="images/nc_logo.png"
+				<td class="team_logo"><a href=# id="nc"><img src="images/nc_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="samsung_data.jsp" id="samsung"><img src="images/samsung_logo.png"
+				<td class="team_logo"><a href=# id="samsung"><img src="images/samsung_logo.png"
 						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="kt_data.jsp" id="kt"><img src="images/kt_logo.png"
+				<td class="team_logo"><a href=# id="sk"><img src="images/sk_logo.png"
 						width="150px" height="120px"></a></td>
 			</tr>
 		</table>

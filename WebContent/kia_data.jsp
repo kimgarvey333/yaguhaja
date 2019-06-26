@@ -9,7 +9,7 @@
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets/css/data_search.css" />
+<link rel="stylesheet" href="assets/css/kia_data.css" />
 <link href="https://fonts.googleapis.com/css?family=Jua&display=swap"
 	rel="stylesheet">
 <style type="text/css">
@@ -42,35 +42,50 @@
 									need a subtitle.
 								-->
 		<h2 id="main">
-			<a>KBO 선수 데이터 </a>
+			<a>기아 선수 데이터 </a>
+			<br>
+			<br>
 		</h2>
 
 
 
-		<table id="view_team_logo">
+		<table id="view_player">
 			<tr>
-				<td class="team_logo"><a href="kia_data.jsp" id="kia"><img src="images/kia_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="doosan_data.jsp" id="doosan"><img src="images/doosan_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="hanwha_data.jsp" id="hanwha"><img src="images/hanwha_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="kiwoom_data.jsp" id="kiwoom"><img src="images/kiwoom_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="sk_data.jsp" id="sk"><img src="images/sk_logo.png"
-						width="150px" height="120px"></a></td>
+				<td><a href="player_info?player=양현종&team=기아"><img src="player_img/KIA_yhj.jpg"
+						width="150px" height="180px"></a></td>
+				<td><a href="player_info?player=김윤동&team=기아""><img src="player_img/KIA_kyd.jpg"
+						width="150px" height="180px"></a></td>
+				<td><a href="player_info?player=문경찬&team=기아""><img src="player_img/KIA_mkc.jpg"
+						width="150px" height="180px"></a></td>
+				<td><a href="player_info?player=터너&team=기아""><img src="player_img/KIA_tn.jpg"
+						width="150px" height="180px"></a></td>
+				<td><a href="player_info?player=윌랜드&team=기아""><img src="player_img/KIA_wld.jpg"
+						width="150px" height="180px"></a></td>				
+			<tr align = "center">
+				<td> <a href="player_info?player=양현종&team=기아"" style="text-decoration:none">NO.54 양현종</a></td> 
+				<td> <a href="player_info?player=김윤동&team=기아"" style="text-decoration:none">NO.28 김윤동</a></td> 
+				<td> <a href="player_info?player=문경찬&team=기아"" style="text-decoration:none">NO.35 문경찬</a></td> 
+				<td> <a href="player_info?player=터너&team=기아"" style="text-decoration:none">NO.40 터너</a></td> 
+				<td> <a href="player_info?player=윌랜드&team=기아"" style="text-decoration:none">NO.56 윌랜드</a></td> 
 			</tr>
 			<tr>
-				<td class="team_logo"><a href="lg_data.jsp" id="lg"><img src="images/lg_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="lotte_data.jsp" id="lotte"><img src="images/lotte_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="nc_data.jsp" id="nc"><img src="images/nc_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="samsung_data.jsp" id="samsung"><img src="images/samsung_logo.png"
-						width="150px" height="120px"></a></td>
-				<td class="team_logo"><a href="kt_data.jsp" id="kt"><img src="images/kt_logo.png"
-						width="150px" height="120px"></a></td>
+				<td><a href="player_info?player=임기영&team=기아"" style="text-decoration:none"><img src="player_img/KIA_yky.jpg"
+						width="150px" height="180px" style="text-decoration:none"></a></td>
+				<td><a href="player_info?player=전상현&team=기아"" style="text-decoration:none"><img src="player_img/KIA_jsh.jpg"
+						width="150px" height="180px" style="text-decoration:none"></a></td>
+				<td><a href="player_info?player=차명진&team=기아"" style="text-decoration:none"><img src="player_img/KIA_cmj.jpg"
+						width="150px" height="180px" style="text-decoration:none"></a></td>
+				<td><a href="player_info?player=홍건희&team=기아""><img src="player_img/KIA_hkh.jpg"
+						width="150px" height="180px"></a></td>
+				<td><a href="player_info?player=이준영&team=기아""><img src="player_img/KIA_ljy.jpg"
+						width="150px" height="180px"></a></td>
+			</tr>
+			<tr align = "center">
+				<td> <a href="player_info?player=임기영&team=기아"">NO.38 임기영</a></td> 
+				<td> <a href="player_info?player=전상현&team=기아"">NO.55 전상현</a></td> 
+				<td> <a href="player_info?player=차명진&team=기아"">NO.58 차명진</a></td> 
+				<td> <a href="player_info?player=홍건희&team=기아"">NO.51 홍건희</a></td> 
+				<td> <a href="player_info?player=이준영&team=기아"">NO.65 이준영</a></td> 
 			</tr>
 		</table>
 		</header> <!-- <div class="info">

@@ -1,15 +1,17 @@
 package yaguhaja.function;
 
 public class dataDTO {
-	int player_num;
-	String name;
-	float height;
-	float weight;
-	int backnumber;
-	String position;
-	String fav_hand;
-	float hit_rate;
-	
-	
+   String team;
+   String name;
+   String backnumber;
+   String birth;
+   String position;
+   String hw;
+   String career;
+   String standing_deposit;
+   String annual_income;
+   String rank;
+   String year;
+   
 }
 
